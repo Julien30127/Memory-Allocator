@@ -9,7 +9,7 @@ void* my_malloc_test(size_t size)
         return NULL; // Ne rien allouer pour une taille de 0
     }
 
-    // Arrondir la taille à la taille d'une page mémoire
+    //Arrondir la taille à la taille d'une page mémoire
     size_t alloc_size = size + sizeof(Block);
 
     // Utiliser mmap pour allouer de la mémoire
@@ -20,7 +20,7 @@ void* my_malloc_test(size_t size)
         return NULL; // Si l'allocation échoue
     }
 
-    // Initialiser l'en-tête du bloc
+    //Initialiser l'en-tête du bloc
     Block* block = (Block*)ptr;
     block->size = size; // Enregistrer la taille du bloc
     block->next = NULL;  // Aucun bloc suivant pour l'instant
