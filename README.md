@@ -27,3 +27,5 @@ vérification lors de la libération, à savoir : "Est-ce qu'il y a deux blocs m
 
 Une fois ces améliorations apportées, j'ai pu observer un impact sur les performances. J'ai donc construit un graphique qui comparait non seulement le mem_alloc et mem_alloc_2.0, mais qui comportait aussi les
 performances des fonctions "malloc/free". 
+
+![image](https://github.com/user-attachments/assets/2e7cfcc2-a238-4ff3-b494-7588a1d62324)
